@@ -23,7 +23,7 @@
     gap: 0.5vw;
     padding-left: 5vw;
 }
-#logoImage {
+#logoImg {
     display: none;
     width: 4vw;
 }
@@ -335,6 +335,7 @@
 @media only screen and (max-width:700px) {
     /* header */
     #header {
+        height: 70px;
         background-color: rgb(21, 21, 21);
     }
     #logoName {
@@ -345,7 +346,7 @@
         position: absolute;
         display: none;
         width: 100%;
-        top: 7.5vh;
+        top: 70px;
         gap: 0.5em;
         z-index: 2;
         transition: all 0.3s ease-in-out;
@@ -375,6 +376,8 @@
         background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
         background-repeat: no-repeat;
         background-size: cover;
+        padding-top: 5vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -388,15 +391,17 @@
         gap: 1vh;
     }
     #myImage {
-        width: 75%;
+        width: 60%;
         border-radius:50%;
     }
     #browseButton {
+        margin-top: 10px;
+        height: 70px;
         width: 60vw;
     }
     /* quote */
     #quoteDiv {
-        height: 40vh;
+        height: 350px;
     }
     #quoteText {
         display: flex;
@@ -404,7 +409,7 @@
         align-items: center;
         justify-content: center;
         color: white;
-        gap: 2vh;
+        gap: 10px;
         width: 80%;
     }
     #quote {
@@ -418,8 +423,8 @@
     }
     /* skills */
     #skillsDiv {
-        padding-top: 2.5vh;
-        padding-bottom: 4vh;;
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
         background-color: #292828;
         background-repeat:no-repeat;
@@ -442,10 +447,10 @@
     }
     .language {
         width: 50vw;
-        gap: 1vh;
+        gap: 20px;
     }
     .languageImage {
-        width: 30vw;;
+        width: 30vw;
     }
     /* projects */
     #projectDiv {
@@ -453,6 +458,7 @@
         flex-direction: column;
         width: 100vw;
         align-items: center;
+        gap: 20px;
     }
     #projectDivTitle {
         text-align: center;
@@ -473,13 +479,14 @@
     }
     .projectDescription {
         width: 90%;
-        gap: 2.5vh;
+        gap: 20px;
     }
     .projectTitle {
         text-align: center;
     }
     .learnMoreButton {
-        width: 30vh;
+        height: 60px;
+        width: 200px;
     }
     /* end, last div */
     #endDiv {
@@ -488,7 +495,7 @@
         background-color: #292828;
         display: flex;
         flex-direction: column;
-        height: 70vh;
+        height: 500px;
         text-align: center;
     }
     #contactLogo {
