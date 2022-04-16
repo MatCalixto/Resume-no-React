@@ -35,15 +35,10 @@ function toggleMenu() {
 const startDiv = document.getElementById("startDiv");
 const skillsDiv = document.getElementById("skillsDiv");
 const endDiv = document.getElementById("endDiv");
-let scroll = document.scrollingElement.scrollTop;
-let xvalue = "center";
-let yvalue = scroll * 0.5;
-startDiv.style.backgroundPosition = xvalue + " " + yvalue + "px";
-skillsDiv.style.backgroundPosition = xvalue + " " + (yvalue - 500) + "px";
-endDiv.style.backgroundPosition = xvalue + " " + (yvalue + 50) + "px";
 const header = document.getElementById("header");
 document.getElementById("body").onscroll = function myFunc() {
   let scroll = document.scrollingElement.scrollTop;
+  console.log(scroll)
   let xvalue = "center";
   let yvalue = scroll * 0.5;
   startDiv.style.backgroundPosition = xvalue + " " + yvalue + "px";
@@ -56,5 +51,29 @@ document.getElementById("body").onscroll = function myFunc() {
   else {
     header.style.transition = "all 0.3s ease-in-out";
     header.style.background = "rgb(21, 21, 21)";
+  }
+  if (scroll < 900) {
+    menuItem1.style.color = "rgb(168, 168, 168)"; 
+    menuItem2.style.color = "white";
+    menuItem3.style.color = "white";
+    menuItem4.style.color = "white";
+  }
+  else if (scroll >= 900 && scroll < 1600) {
+    menuItem1.style.color = "white"; 
+    menuItem2.style.color = "rgb(168, 168, 168)";
+    menuItem3.style.color = "white";
+    menuItem4.style.color = "white";
+  }
+  else if (scroll >= 1600 && scroll < 3300) {
+    menuItem1.style.color = "white"; 
+    menuItem2.style.color = "white";
+    menuItem3.style.color = "rgb(168, 168, 168)";
+    menuItem4.style.color = "white";
+  }
+  else if (scroll >= 3300) {
+    menuItem1.style.color = "white"; 
+    menuItem2.style.color = "white";
+    menuItem3.style.color = "white";
+    menuItem4.style.color = "rgb(168, 168, 168)";
   }
 }

@@ -346,7 +346,7 @@
         position: absolute;
         display: none;
         width: 100%;
-        top: 70px;
+        top: 65px;
         gap: 0.5em;
         z-index: 2;
         transition: all 0.3s ease-in-out;
@@ -357,6 +357,9 @@
         display: block;
         width: 10vw;
         margin-right: 8vw;
+    }
+    #menuItem1 {
+        color: rgb(168, 168, 168);
     }
     #menuItem1, #menuItem2, #menuItem3, #menuItem4 {
         font-size: 0em;
