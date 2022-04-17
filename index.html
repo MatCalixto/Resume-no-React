@@ -14,13 +14,13 @@
     <header id="header">
         <div id="logo">
             <img id="logoImg" src="https://cdn.discordapp.com/attachments/814863283072925746/961810520040697876/Untitled129_20220407231128.png" alt="Logo">
-            <a id="logoName" href="#main">Matheus Calixto</a>
+            <a id="logoName" href="#Home">Matheus Calixto</a>
         </div>
         <nav id="navigation">
-            <a id="menuItem1" href="#main" >Home</a>
-            <a id="menuItem2" href="#skillsAnchor">Skills</a>
-            <a id="menuItem3" href="#projectAnchor">Projects</a>
-            <a id="menuItem4" href="#endDiv">Contact</a>
+            <a id="menuItem1" href="#Home" onclick="toggleMenu()">Home</a>
+            <a id="menuItem2" href="#Skills" onclick="toggleMenu()">Skills</a>
+            <a id="menuItem3" href="#Projects" onclick="toggleMenu()">Projects</a>
+            <a id="menuItem4" href="#Contact" onclick="toggleMenu()">Contact</a>
         </nav>
         <div id="menu" onclick="toggleMenu()">
             <div id="bar1"></div>
@@ -28,24 +28,25 @@
         </div>
     </header>
     <main id="main">
-        <div id="startDiv">
+        <div id="Home"></div>
+        <section id="startDiv">
             <img id="myImage" src="https://cdn.discordapp.com/attachments/953366989634699314/961715631261098024/IMG_4707.jpg">
             <div id="aboutMe">
                 <p id="presenting">Hey, I am Matheus</p>
                 <p id="aboutMeDescription">A Front-End Web Developer</p>
-                <form action="#projectAnchor">
+                <form action="#Projects">
                     <button type="submit" id="browseButton">Browse Projects</button>
                 </form>
             </div>
-        </div>
-        <div id="quoteDiv">
+        </section>
+        <section id="quoteDiv">
             <div id="quoteText">
                 <p id="quote">“We are here to put a dent in the universe. Otherwise why <br> else even be here?”</p>
             <p id="author"><em>Steve Jobs</em></p>
             </div>
-            <div id="skillsAnchor"></div>   
-        </div>
-        <div id="skillsDiv">
+            <div id="Skills"></div>   
+        </section>
+        <section id="skillsDiv">
             <p id="skillsTitle">Skills</p>
             <div id="skills">
                 <div class="group">
@@ -69,9 +70,11 @@
                     </div>
                 </div>
             </div>
-            <div id="projectAnchor"></div>
-        </div>
-        <div id="projectDiv">
+            <p class="descriptionSkills">- Development of Web Applications</p>
+            <p class="descriptionSkills">- Responsive Web Applications</p>
+            <div id="Projects"></div>
+        </section>
+        <section id="projectDiv">
             <p id="projectDivTitle">Some of my Projects</p>
             <div class="project1">
                 <a href="https://github.com/NewCalixto/Architect-Porfolio-Website" target="_blank"><img class="projectImage" src="https://cdn.discordapp.com/attachments/953366989634699314/961291395568644096/ArchitectPreview.png" alt="Architect Web Page"></a>
@@ -104,14 +107,15 @@
                     <a href="https://github.com/NewCalixto/Hasa-Project" target="_blank" class="learnMoreButton">Learn More</a>
                 </div>
             </div>
-        </div>
-        <div id="endDiv">
+        </section>
+        <section id="Contact">
             <div class="contact">
                 <div class="contactTitle">
                     <p class="contactDivTitle">Contact</p>
                     <p class="contactDescription">Here are some ways you can contact me.</p>
                 </div>
                 <div id="contactInfo">
+                    <p class="contactItem">Address: Br 230 Km 9 - Jp, PB - Brazil - 58106-402</p>
                     <p class="contactItem">Email: Matheus.calixto.lino@gmail.com</p>
                     <p class="contactItem">Discord: NewCalixto#9295</p>
                 </div>
@@ -127,13 +131,13 @@
                     <p class="contactDescription">Jump to other sections.</p>
                 </div>
                 <div id="contactInfo">
-                    <a class="sitemapItem" href="#main">Home</a>
-                    <a class="sitemapItem" href="#skillsAnchor">Skills</a>
-                    <a class="sitemapItem" href="#projectAnchor">Projects</a>
+                    <a class="sitemapItem" href="#Home">Home</a>
+                    <a class="sitemapItem" href="#Skills">Skills</a>
+                    <a class="sitemapItem" href="#Projects">Projects</a>
                 </div>
             </div>
             <a href="#main"><img id="contactLogo" src="https://cdn.discordapp.com/attachments/814863283072925746/961810520040697876/Untitled129_20220407231128.png" alt="My Logo"></a>
-        </div>
+        </section>
     </main>
     <footer id="footer">
         <p id="copyright">Copyright © 2022 Matheus Calixto.</p>
