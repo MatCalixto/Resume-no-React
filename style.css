@@ -424,7 +424,6 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 1950px;
         align-items: center;
         gap: 20px;
     }
