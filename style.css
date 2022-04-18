@@ -129,16 +129,22 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 60vh;
     gap: 20px;
 }
 #skillsTitle {
     font-size: 2.5em;
 }
+.descriptionSkills {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
 #skills, .group {
     display: flex;
     flex-direction: row;
     gap: 5vw;
+}
+.group {
+    padding-bottom: 10px;
 }
 .language {
     display: flex;
@@ -388,13 +394,12 @@
         padding-top: 20px;
         padding-bottom: 20px;
         background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
-        background-color: #292828;
-        background-repeat:no-repeat;
         background-size: cover;
+        text-align: center;
     }
-    #skillsTitle {
-        display: block;
-    }
+    .descriptionSkills {
+        
+    } 
     #skills {
         display: flex;
         flex-direction: column;
