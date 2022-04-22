@@ -51,11 +51,10 @@ const header = document.getElementById("header");
 document.getElementById("body").onscroll = function myFunc
 () {
   let scroll = document.scrollingElement.scrollTop;
-  let xvalue = "center";
   let yvalue = scroll * 0.5;
-  startDiv.style.backgroundPosition = xvalue + " " + yvalue + "px";
-  skillsDiv.style.backgroundPosition = xvalue + " " + (yvalue - 500) + "px";
-  Contact.style.backgroundPosition = xvalue + " " + (yvalue + 50) + "px";
+  startDiv.style.backgroundPosition = "center " + yvalue + "px";
+  skillsDiv.style.backgroundPosition = "center " + (yvalue - 500) + "px";
+  Contact.style.backgroundPosition = "center " + (yvalue + 50) + "px";
   if (scroll == 0) {
     header.style.transition = "all 0.3s ease-in-out";
     header.style.background = "";
