@@ -1,5 +1,2 @@
 # Portfolio Website
-This is the code for my website, where I display my skills and some of my projects.
-
-Link to see the website (works for both small and wide screen):
-https://newcalixto.github.io/
+This was the code for my resume website, since then I have remade it using React and added more features, you can find the React version in the pinned projects.
